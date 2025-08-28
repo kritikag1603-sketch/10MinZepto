@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/all.css" rel="stylesheet" />
+    <style>
+        :root {
+            --bgcolor: Linear-gradient(60deg,#039be5,purple,#235af1);
+            --txtcolor: #ff0000;
+        
+        }
+        .bg-mycolor{
+            background:var(--bgcolor)!important;
+        }
+        .txt-color {
+            background: var(--txtcolor);
+        }
+        #menu {
+            background: transparent !important;
+        }
+        #menu ul li a {
+            color:white;
+        }
+        #bac{
+            background-image:url('best wllpaper.jpg');
+            min-height:400px;
+        }
+
+        ufooter{
+            min-height:300px;
+            margin-bottom:.2%;
+        }
+        .bfooter{
+            min-height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row t1 bg-mycolor " style="color:white;">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                +91 7307672133    <i class="fa-solid fa-phone fa-xl"></i>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                shmbabuguta@gmail.com
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12"> Welcome to GPS</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-youtube fa-xl"></i>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </div>
+        </div>
+
+        <div class="row t2 bg-mycolor">
+            <div class="col-sm-12 mx-auto">
+                <div class="row">
+                    <div class="col-sm-3 fs-3">
+                        <b>GPS</b>Services <a href="#" class="btn bg-mycolor text-light">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                        <div class="col-sm-6 ">
+                            <!--start search-->
+                            <nav class="navbar bg-mycolor" ">
+                                <div class="container-fluid">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control " type="search" placeholder="Search" style="width:500px;">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </nav>
+                            <!--end search-->
+                        </div>
+                      
+                        </div>
+                    </div>
+            </div>
+            <div class="row t3 bg-mycolor txt-color fs-5" >
+                <div class="col-sm-8 m-auto">
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">     
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/hoome/Home"><i class="fa-solid fa-house" style="color: #fbfcfe;"></i>Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Hoome/About"><i class="fa-solid fa-address-card"></i>About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Hoome/Product"><i class="fa-solid fa-carrot" style="color: #fafafa;"></i>Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Hoome/Contact"><i class="fa-solid fa-tty" style="color: #ffffff;"></i>Customer Support</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Hoome/Signup"><i class="fa-solid fa-user fa-xl" style="color: #fafafa;"></i>Sign Up</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Sign Out</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <img src="~/Content/images/jj.jpg" class="img-thumbnail" style="max-height:30PX;" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!--end menu-->
+                </div>
+                <div class="COL-SM-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 min-height:900px;">
+                    @RenderBody()
+                </div>
+            <div class="row ufooter bg-mycolor" style="background:red;"></div>
+            <div class="row bfooter bg-mycolor" style="background:red;"></div>
+            </div>
+        </div>
+        <script src="~/Content/js/bootstrap.bundle.js"></script>
+</body>
+</html>
