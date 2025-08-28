@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/adminlayout.cshtml";
+}
+
+<div class="row">
+    <div class="texxt-center fs-2">Category<b class="text-primary">Requeriment</b></div>
+
+    <div class="row p-5">
+
+        <div class="col-sm-4 card text-bg-dark ">
+            <div class="card-body">
+                <h5 class="card-title " style="color:white;"> ADD  VIDEO CATEGORY</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail"> Category Name</label>
+                        <input type="text" name="catname" class="form-control" id="catname" aria-describedby="Category" placeholder="Enter Video category" />
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail"> Category Icon</label>
+                        <input type="file" name="caticon" class="form-control" id="caticon" aria-describedby="Category" placeholder="Enter Video category" />
+                    </div>
+                    <input class="btn btn-danger mt-3" type="submit" style="background:#c6003d;" value="ADD NOW" />
+                </form>
+            </div>
+
+        </div>
+        <!-- starting of table section-->
+        <div class="col-sm-7 ms-5 card text-center">
+
+            <div class="card-body">
+                <table class="table table-bordered table-stripped">
+                    <thead>
+                        <tr>
+                            <th>S No.</th>
+                            <th>Category Name</th>
+                            <th>Category Icon</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ 
+                            foreach (var r in ViewBag.category.Rows )
+                        {
+                        <tr>
+                            <td>@r[0]</td>
+                            <td>@r[1]</td>
+                            <td>@r[2]</td>
+                            <td><i class="fa fa-trash text-danger"></i></td>
+                        </tr>
+                                }
+                            }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

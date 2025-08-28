@@ -1,0 +1,70 @@
+﻿
+
+@{
+    ViewBag.Title = "Subcategory";
+    Layout = "~/Views/Shared/adminlayout.cshtml";
+}
+
+<h2>Subcategory</h2>
+
+    <div class="row p-5">
+
+        <div class="col-sm-4 card text-bg-dark bg-primary me-3 ">
+            <div class="card-body">
+                <h5 class="card-title " style="color:white;"> ADD  SUBCATEGORY</h5>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail">Choose Category Name</label>
+                        <select class="form-control form-select-lg  mb-3"  name="category">
+                            <option value="0">Choose Category</option>
+                           @{ 
+                               if (ViewBag.subcat!=null)
+
+
+                               {
+                                   foreach(var data in ViewBag.subcat.Rows)
+                                   {
+                              <option value= "@data[0]">@data[1]</option>
+                }
+            }
+                           }
+                        </select>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail">Sub Category Name</label>
+                        <input type="text" required name="subcatname" class="form-control" id="catname" aria-describedby="Category" placeholder="Enter Video category" />
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail">Sub Category Icon</label>
+                        <input type="file" required name="subcaticon" class="form-control" id="caticon" aria-describedby="Category" placeholder="Enter Video category" />
+                    </div>
+                    <input class="btn btn-danger mt-3" type="submit" style="background:#c6003d;" value="ADD NOW" />
+                </form>
+            </div>
+
+        </div>
+        <!-- starting of table section-->
+        <div class="col-sm-7 ms-5 card text-center">
+
+            <div class="card-body">
+                <table class="table table-bordered table-stripped">
+                    <thead>
+                        <tr>
+                            <th>S No.</th>
+                            <th>Choose Category</th>
+                            <th>Category Name</th>
+                            <th>Category Icon</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ 
+                           
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
