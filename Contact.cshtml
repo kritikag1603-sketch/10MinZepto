@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/generallayout.cshtml";
+}
+}
+
+
+    <div class="row">
+        <div class="col-12">
+            <form method="post" enctype="multipart/form-data" >
+                Name :   <input type="text" name="name" placeholder="Enter the name" class="form-control" /> <br />
+                Contact No :   <input type="text" name="mobno" placeholder=" enter your Mobile No" class="form-control" /> <br />
+                Email  : <input type="text" name="email" placeholder="Enter the email" class="form-control" /> <br />
+                Message :            <textarea class="form-control" name="message"></textarea> <br />
+               
+                <input type="submit" name="save" class="form-control border border-4 border-radius border-info" />
+            </form>
+        </div>
+    </div>
+
+

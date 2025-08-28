@@ -1,9 +1,429 @@
 ﻿
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/adminlayout.cshtml";
+    Layout = "~/Views/Shared/generallayout.cshtml";
 }
 
+<div class="row">
+    <div class="COL-SM-12 ">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/Content/images/slider3.jpg" style="max-height:350px;" class=" w-100 rounded rounded-3" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/images/slider2.jpg" style="max-height:350px;" class="d-block w-100 rounded rounded-3" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/images/slider3.jpg" style="max-height:350px;" class="d-block w-100 ounded rounded-3" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--END SLIDER-->
+    @*start category*@
+<div class="row bg-light p-1 text-center">
+    <div class=" fs-3 bg-mycolor">
+        All Verities are <b style="txt-color">Avaiable</b>
+    </div>
 
+    <div class="col-lg-1 col-md-3 col-sm-6 ">
+        <div class="card">
+            <img src="~/Content/images/fortune.jpg" class="card-img-top" />
+            Fortune <br />   Oil
+        </div>
+    </div>
+
+
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/dhaniya poweder.jpg" class="card-img-top" />
+            Dhaniya Pwoder
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/chips.jpg" class="card-img-top" />
+            Chips & Snacks
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/tea.jpg" class="card-img-top" />
+            Tea & <br />   Coffee
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/shop.jpg" class="card-img-top" />
+            Cleaning Essential
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/cola.jpg" class="card-img-top" style="height:100px; width:30px; margin-left:30px;" />
+            Cold <br />  Drinks
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/patanjali.jpg" class="card-img-top" />
+            patanjali<br /> Oil
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/apple.jpg" class="card-img-top" style="height:100px;" />
+            Fresh <br />   Fruits
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/jeera poweder.jpg" class="card-img-top" style="height:100px;" />
+            Jeera<br /> Powder
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/hldi pac.jpg" class="card-img-top" style="height:100px;" />
+            Hldi <br />Powder
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/gii.jpg" class="card-img-top" style="height:120px;" />
+            Desi   Gii
+        </div>
+    </div>
+    <div class="col-lg-1 col-md-3 col-sm-6">
+        <div class="card">
+            <img src="~/Content/images/chinness spinach.jpg" class="card-img-top" style="height:100px;" />
+            Chauli
+            <br />Leaves
+        </div>
+    </div>
+
+</div>
+    @*end category*@
+
+    <div class=" fs-3 bg-mycolor">
+        Today's <b style="txt-color">Deals</b>
+    </div>
+    @*start product*@
+<div class="row" style="display:flex;">
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2" style="display:flex;">
+        <div class="card">
+            <img src="~/Content/images/aata.jpg" class="crd-img-top " />
+            <div class="card-body">
+                <b>Aashiward</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>500/-</s> <b>399/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="mFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="txtcard" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" pFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b>
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2">
+        <div class="card">
+            <img src="~/Content/images/dhaniya.jpg" class=P"crd-img-top "   />
+            <div class="card-body">
+                <b>Leafy</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>100/-</s> <b>89/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="comeFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="txtcrd" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" goFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b>
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+            <script>
+                var i = 0
+                var b = document.getElementById("txtcrd")
+                function goFun() {
+                    i++;
+                    b.value = i;
+                    // alter(i)
+                }
+                function comeFun() {
+                    if (i > 0) {
+                        i--;
+                        b.value = i;
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2">
+
+        <div class="card">
+            <img src="~/Content/images/WhatsApp Image 2023-09-11 at 12.34.33 AM.jpeg" class="crd-img-top " style="height:220px;margin-top:10px; margin-left:0px; margin-right:20px;" />
+            <div class="card-body">
+                <b>Sugar</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>50/-</s> <b>39/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="ftFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="tt" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" thFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b>
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+        </div>
+        <script>
+            var i = 0
+            var x = document.getElementById("tt")
+            function thFun() {
+                i++;
+                x.value = i;
+                // alter(i)
+            }
+            function ftFun() {
+                if (i > 0) {
+                    i--;
+                    x.value = i;
+                }
+            }
+        </script>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2">
+
+        <div class="card">
+            <img src="~/Content/images/daal.jpg"
+                 class="crd-img-top " />
+            <div class="card-body">
+                <b>Aa</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>1500/-</s> <b>999/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="outFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="text" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" inFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b>
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+        </div>
+        <script>
+            var i = 0
+            var o = document.getElementById("text")
+            function inFun() {
+                i++;
+                o.value = i;
+                // alter(i)
+            }
+            function outFun() {
+                if (i > 0) {
+                    i--;
+                    o.value = i;
+                }
+            }
+        </script>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2">
+
+        <div class="card">
+            <img src="~/Content/images/chwal fortune.jpg" class="crd-img-top " style="width:180px; height:225px; margin-left:20px;"/>
+
+            <div class="card-body">
+                <b>Chawal</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>150/-</s> <b>129/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="bFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="txt" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" aFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b>
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+        </div>
+        <script>
+            var i = 0
+            var a = document.getElementById("txt")
+            function aFun() {
+                i++;
+                a.value = i;
+                // alter(i)
+            }
+            function bFun() {
+                if (i > 0) {
+                    i--;
+                    a.value = i;
+                }
+            }
+        </script>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12 py-2">
+
+        <div class="card">
+            <img src="~/Content/images/anik.jpg" class="crd-img-top bg-mycolor" />
+            <div class="card-body">
+                <b>Aashiward</b>
+                1 pcs <br />
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <s>1500/-</s> <b>999/-</b>
+                <div class="input-group">
+                    <b class="input-group-text" onclick="wFun()">
+                        <i class="fa-solid fa-minus"></i>
+                    </b>
+                    <input type="text" id="last" class="form-control text-center" fs-5 value="0" />
+                    <b class="input-group-text " onclick=" vFun()">
+                        <i class="fa-solid fa-plus"></i>
+                    </b><br />
+                </div>
+                <input type="submit" value=" Add" class="btn bg-mycolor text-light" style="margin-top:8PX;" />
+            </div>
+        </div>
+    </div>
+    <script>
+        var i = 0
+        var k = document.getElementById("last")
+        function vFun() {
+            i++;
+            k.value = i;
+            // alter(i)
+        }
+        function wFun() {
+            if (i > 0) {
+                i--;
+                k.value = i;
+            }
+        }
+    </script>
+</div>
+    <script>
+        var i = 0
+        var t = document.getElementById("txtcard")
+        function pFun() {
+            i++;
+        t.value = i;
+            // alter(i)
+        }
+        function mFun() {
+            if (i > 0) {
+            i--;
+        t.value = i;
+            }
+        }
+</script>
+@*end product*@
+
+<div class="row" style="display:flex;">
+    <div class="col-12 " style="display:flex;margin:5PX;">
+        <div class="card" style="width: 22rem; text-align: center; margin: 5PX;">
+            <img src="~/Content/images/secure-payment.png" style="margin-left:120px; margin-top:30px;"
+                 class="card-img-top w-25" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">100% SECURITY PAYMENT</h5>
+                <p class="card-text text-secondary">Moving your card details to a much more secure place</p>
+            </div>
+        </div>
+
+        <div class="card" style="width:22rem; text-align: center; margin: 5PX;">
+            <img src="~/Content/images/hour.png" style="margin-left:120px; margin-top:30px;"
+                 class="card-img-top w-25" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">HELP CENTER</h5>
+                <p class="card-text text-secondary">Moving your card details to a much more secure place</p>
+            </div>
+        </div>
+        <div class="card" style="width: 22rem; text-align: center; margin: 5PX; ">
+            <img src="~/Content/images/fast-delivery.png" style="margin-left:120px; margin-top:30px;"
+                 class="card-img-top w-25" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">FAST SERVICES</h5>
+                <p class="card-text text-secondary">Moving your card details to a much more secure place</p>
+            </div>
+        </div>
+        <div class="card" style="width:22rem; text-align: center; margin: 5PX;">
+            <img src="~/Content/images/return.png" style="margin-left:120px; margin-top:30px;"
+                 class="card-img-top w-25" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">RETURN & REFUNDS</h5>
+                <p class="card-text text-secondary">Moving your card details to a much more secure place</p>
+            </div>
+        </div>
+    </div>
+</div></div>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 " style="display: flex; background:whitesmoke;">
+            <div class="col-3  mt-5">
+                <div class="col-4">
+                    <img src="~/Content/images/grm.jpg" style="height:90px; width:250px; margin-top:10px;">
+                </div>
+                <div class="col-4"><img src="~/Content/images/StartupIndia.jpg" style="height:90px; width:250px; margin-top:10px;"></div>
+                <div class="col-4"><img src="~/Content/images/google-play-logo.jpg" style="height:90px; width:250px; margin-top:10px;"></div>
+            </div>
+            <div class="col-3   p-2" style=" color:black;">
+                <h4 style="color:black;">Contact Address</h4>
+                &nbsp;&nbsp;<p> <i class="fa-solid fa-house-chimney fa-xl" style="color: #67032f;"></i> &nbsp;Plot No-43,Behind H.P Petrol Pump, Tedhi Pulia Ring RD, Sector 5, Vikash Nagar,Lucknow, Uttar Pradesh 226022</p>
+                <p><i class="fa-solid fa-phone fa-xl" style="color: #67032f;"></i>+91-7007337006</p>
+                <p><i class="fa-solid fa-phone fa-xl" style="color: #67032f;"></i>&nbsp;+91-8052978684</p>
+                <p><i class="fa-regular fa-envelope fa-xl" style="color: #67032f;"></i>&nbsp;shmbabuguta@gmail.com</p>
+                <hr style="border-color: white; border:10px; width:150px; height:50px;">
+            </div>
+            <div class="col-3 bbb " style=" color:black;">
+                <img src="~/Content/images/delivery.jpg" style="height:80px; width:250px; margin-top:10px;"><br /><br />
+                <p>GPS Services is an organization working in both saling and purching width aims to make all its clints feel spacial and help them to become successful.
+
+                <p><b>Stay Connected</b></p>&nbsp;&nbsp; &nbsp;<i class="fa-brands fa-facebook-f fa-xl" style="color: #f7f6f3f7;"></i>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<i class="fa-brands fa-twitter fa-xl" style="color: #f9fafb;"></i>
+                &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<i class="fa-brands fa-instagram fa-xl" style="color: #f9fafb;"></i>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-whatsapp fa-xl" style="color: #f7f7f8;"></i>
+                &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<i class="fa-brands fa-youtube fa-xl" style="color: #f2f4f7;"></i>
+            </div>
+            <div class="col-3">
+                <h4 style="color:black;">Information</h4><hr style="width:100px; margin-top:6px;
+    margin-right:0px; border-color:white; ">
+                <ul typeof="bullet" ">
+                    <li>New Products</li>
+                    <li>Top Sellers</li>
+                    <li>Our  Blogs</li>
+                    <li>About Our Shop</li>
+                    <li>About Vertities</li>
+                </ul>
+            </div>
+        </div>
+        </div>
 
 

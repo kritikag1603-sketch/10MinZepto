@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Product";
-    Layout = "~/Views/Shared/adminlayout.cshtml";
+    Layout = "~/Views/Shared/generallayout.cshtml";
 }
 
 <h2>Product</h2>
@@ -9,24 +9,24 @@
     <form method="post" enctype="multipart/form-data">
         <div class="col-lg-6">
             Choose category
-            <select class="form-control name=" pcat"">
-               
+            <select class="form-control name=">
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
 
 
 
             </select>
             <br />
             Choose Subcategory
-            <select class="form-control" name="psubcat">
-                @{
-                    if (ViewBag.subcat != null)
-                    {
-                        foreach (var data in ViewBag.subcat.Rows)
-                        {
-                            <option value="@data[0]"> @data[1]</option>
-                        }
-                    }
-                }
+            <select class="form-control">
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
+                <option>a</option>
 
 
 
@@ -35,41 +35,19 @@
             Product Name
             <input type="text" name="pname" class="form-control" /> <br />
             Product Details
-            <textarea class="form-control" name="pdesc"></textarea> <br />
+            <textarea class="form-control" name="pdetails"></textarea> <br />
             Model
-            <input type="text" name="pmodel" class="form-control" /> <br />
+            <input type="text" name="model" class="form-control" /> <br />
             Pack Size
             <input type="text" name="psize" class="form-control" /> <br />
             Sale Rate
-            <input type="number" name="psalerate" class="form-control" /> <br />
+            <input type="number" name="srate" class="form-control" /> <br />
             MRP
-            <input type="number" name="pmrp" class="form-control" /><br />
+            <input type="number" name="mrp" class="form-control" /><br />
             Choose Pic
-            <input type="file" name="picon" class="form-control" /> <br />
+            <input type="file" name="choosepic" class="form-control" /> <br />
             <input type="submit" value="Add Product Now" class="border-2 bg-mycolor rounded-2" />
         </div>
     </form>
-    <!--STARTING OF TABLE-->
-    <DIV class="COL-SM-7 MT-5 card text-center">
-        <div class="card">
-            <table class="table table-bordered table-striped" >
-                <thead>
-                    <tr>
-                        <th>S No.</th>
-                    <th></th>
-                        <th>Category Name</th>
-                        <th>Subcategory Name</th>
-                         <th>Product Name</th>
-                        <th>Product Deatil</th>
-                        <th>Product Model</th>
-                        <th>Pack</th>
-                        <th>Salerate</th>
-                        <th>MRP</th>
-                        <th>Product Pic</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </DIV>
 </div>
+
